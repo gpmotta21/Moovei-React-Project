@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/Moovei-React-Project/static/js/main.7956a7c9.js",
+    "static/media/bgDesktop.png": "/Moovei-React-Project/static/media/bgDesktop.75065f6572cac40dbd5e.png",
+    "static/media/bgMobile.png": "/Moovei-React-Project/static/media/bgMobile.56b7c40bd863d2cc7cec.png",
+    "static/media/alternateBg.png": "/Moovei-React-Project/static/media/alternateBg.742395a2493a50016727.png",
+    "index.html": "/Moovei-React-Project/index.html",
+    "main.7956a7c9.js.map": "/Moovei-React-Project/static/js/main.7956a7c9.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7956a7c9.js"
+  ]
+}
