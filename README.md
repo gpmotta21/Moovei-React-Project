@@ -18,7 +18,7 @@ Some of the features of this project are:
 
 ## Favorites Page
 
-<img  src="./application/src/assets/img/readme/Favorites.png">
+<img  src="./application/src/assets/img/readme/favorites.png">
 
 ## Description Page
 
