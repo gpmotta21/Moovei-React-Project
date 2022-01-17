@@ -22,8 +22,9 @@ Some of the features of this project are:
 
 ## Description Page
 
-<img  src="./app/src/assets/img/readme/description.png" >
-Mobile
+<img  src="./app/src/assets/img/readme/description.png">
+
+## Mobile
 
 <img style='width: 200px' src="./app/src/assets/img/readme/mobile.jpeg">
 
