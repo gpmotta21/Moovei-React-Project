@@ -1,4 +1,4 @@
-# Moovei ( React Project ) -> [Click here to go to the website]()
+# Moovei ( React Project ) -> [Click here to go to the website](https://gpmotta21.github.io/Moovei-React-Project)
 
 > In this project, I created a website where you can check about some films and add them to a list of favorites.
 
@@ -14,17 +14,17 @@ Some of the features of this project are:
 
 ## Homepage
 
-<img  src="./app/src/assets/img/readme/homepage.png" >
+<img  src="./application/src/assets/img/readme/homepage.png" >
 
 ## Favorites Page
 
-<img  src="./app/src/assets/img/readme/Favorites.png">
+<img  src="./application/src/assets/img/readme/Favorites.png">
 
 ## Description Page
 
-<img  src="./app/src/assets/img/readme/description.png">
+<img  src="./application/src/assets/img/readme/description.png">
 
 ## Mobile
 
-<img style='width: 200px' src="./app/src/assets/img/readme/mobile.jpeg">
+<img style='width: 200px' src="./application/src/assets/img/readme/mobile.jpeg">
 
