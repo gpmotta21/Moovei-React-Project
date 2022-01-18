@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { i } from '../assets/icons'
 import { useNavigate } from 'react-router-dom';
 import alternateBg from '../assets/img/alternateBg.png'
-import { AnimatedPages } from './AnimatedPages'
+import { AnimatedPages } from './AnimatedPages';
+import { devices } from '../assets/devices';
 
-function Favortites({ className }) {
+function Favortites() {
     const animations = {
         initial: {opacity: 0, x: 1920},
         animate: {opacity: 1, x: 0},
@@ -15,8 +16,8 @@ function Favortites({ className }) {
     const navigate = useNavigate()
 
     return (
-            <StyledFav className={className} animations={animations}>
-                <List className='List' type='favorite' />
+            <StyledFav animations={animations}>
+                <List type='favorite' className='List'/>
                 <StyledButton onClick={() => navigate('/')}>
                     {i.house}
                 </StyledButton>
@@ -40,10 +41,10 @@ const StyledFav = styled(AnimatedPages)`
     background-size: cover;
     background-position: center;
 
-
-
-    
     .List .title, .List .other { color: var(--white) !important; }
+
+    @media ${devices.tablet}{ width: 85% }
+
     `
 const StyledButton = styled.button`
         position: absolute;
@@ -63,6 +64,8 @@ const StyledButton = styled.button`
     .teste{
         display: none;
     }
+
+    
     
 `
 

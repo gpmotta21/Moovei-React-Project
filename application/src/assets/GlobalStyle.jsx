@@ -27,98 +27,14 @@ const GlobalStyle = createGlobalStyle`
       
     }
   
-  @media ${devices.tablet}{
-    body{ background-position: center;}
+  @media ${devices.tablet} { body{ background-position: center;} }
 
-    .PagesStyle{ height: 82%; }
-
-    .Footer{ height: 12%; }
-    
-    .List{
-        height: 85%;
-
-        #title{
-          font-size: 16px !important;
-        }
-        img{
-          max-width: 260px;
-        }
-    }
-
-    .FavoritesPage{
-      width: 80%
-    }
-
-    .PlotPage{
-      width: 90%;
-      height: 80%;
-
-      
-    }
-  }
-
-  @media (max-height: 600px){
-    body{
-      height: 150vh;
-    }
-    .StyledApp{
-      height: 150vh;
-    }
-
-    .List{
-      .title{
-        font-size: 11px !important;
-      }
-    }
-
-    .FavoritesPage, .PlotPage{
-      background-size: cover;
-    }
-    
-    .PlotPage{
-      img{
-        max-width: 150px;
-      }
-    }
-    
-  }   
+  @media (max-height: 600px) { body{ height: 150vh; } }   
   
   @media ${devices.mobile}{
     body{
       background-image: url(${bgMobile});
       background-repeat: no-repeat;
-    }
-    
-    .Header{
-      img{
-        max-width: 90px;
-      }
-    }
-
-    .List{
-      .title{
-        font-size: 16px !important;
-      }
-    }
-    
-    .PlotPage{
-      #container{
-        grid-template-rows: 15% 40% 45%;
-        grid-template-columns: 1fr;
-        row-gap: 2%;
-      }
-      
-      img{
-        grid-row: span 1;
-        
-      }
-      #info{
-        font-size: 14px;
-      }
-    }
-
-    .FavoritesPage{
-      width: 94% ;
     }
   }
   `

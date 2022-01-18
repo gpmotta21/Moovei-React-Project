@@ -12,13 +12,13 @@ function App() {
   const location = useLocation()
 
   return (
-    <StyledApp className='StyledApp'>
+    <StyledApp>
       <GlobalStyle />
           <AnimatePresence exitBeforeEnter>
           <Routes key={location.pathname} location={location}>
-            <Route path='/' element={<MoviesPage className='MoviePage'/>} />
-            <Route path='plot' element={<PlotPage className='PlotPage'/>} />
-            <Route path='favorites' element={<FavoritesPage className='FavoritesPage'/>} />
+            <Route path='/' element={<MoviesPage />} />
+            <Route path='plot' element={<PlotPage />} />
+            <Route path='favorites' element={<FavoritesPage />} />
           </Routes>
           </AnimatePresence>
       <Footer className='Footer'/>
@@ -37,4 +37,6 @@ const StyledApp = styled.div`
   align-items: center;
   justify-content: flex-end;
   overflow: hidden;
+
+  @media (max-height: 600px){ height: 150vh; }
   `

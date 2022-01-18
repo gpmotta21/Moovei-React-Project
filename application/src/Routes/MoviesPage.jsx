@@ -13,7 +13,7 @@ const animations = {
 }
 
 
-export default function MoviesList({className}) {
+export default function MoviesList() {
   
   const dispatch = useDispatch();
 
@@ -23,9 +23,9 @@ export default function MoviesList({className}) {
 
 
   return (
-<StyledMovies className={className} animations={animations}>
-       <Header className='Header'/>
-      <List type={'movies'} className='List'/>
+<StyledMovies animations={animations}>
+       <Header />
+      <List type={'movies'} />
 </StyledMovies>
   )
 }

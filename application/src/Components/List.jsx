@@ -3,8 +3,7 @@ import { fetchPlot, addFavorite, removeFavortite } from '../redux/actions.js';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { i } from '../assets/icons';
-import { AnimatedPages } from '../Routes/AnimatedPages'
-
+import { devices } from "../assets/devices.js";
 
 
 function List({ type, className }) {
@@ -23,9 +22,8 @@ function List({ type, className }) {
         if (movies.loading) {
             return (
 
-            <div></div>
+            <div>Loading</div>
                 
-            
             )
         }
 
@@ -69,7 +67,7 @@ function List({ type, className }) {
 
     return (
         <>
-            {type == 'movies' ? <M className={className}>{renderMovies()}</M> : <M className={className}>{renderFavorites()}</M>}
+            {type == 'movies' ? <M>{renderMovies()}</M> : <M className={className}>{renderFavorites()}</M>}
         </>
     );
 }
@@ -182,6 +180,21 @@ const M = styled.ul`
         width: 100%;
     }
 
+    @media ${devices.tablet}{  
 
+        #title{ font-size: 16px !important; }
+        
+        img{ max-width: 260px; }
+    }
+
+    @media (max-height: 600px){
+
+      .title{
+        font-size: 11px !important;
+      }
+    }
+
+    @media ${devices.mobile}{ .title{ font-size: 16px !important; } }
+    
  
 `

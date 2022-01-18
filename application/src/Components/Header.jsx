@@ -7,13 +7,13 @@ import { fetchMovies } from '../redux/actions.js';
 import { devices } from "../assets/devices";
 import Logo from '../assets/img/Logo.png'
 
-function Header({className}) {
+function Header() {
     const [text, setText] = useState('');
     const dispatch = useDispatch();
     const navigate = useNavigate()
 
     return (
-        <HeaderStyle className={className}>
+        <HeaderStyle>
           <img src={Logo}/>
             <input onChange={(e) => setText(e.target.value)} />
             <button id="my" onClick={() => text !== '' ? dispatch(fetchMovies(text)) : null}>{i.search}</button>
@@ -85,9 +85,8 @@ const HeaderStyle = styled.div`
     margin-left: auto;
   }
 
-  @media ${devices.tablet}{
-        height: 15%;
-
-    }   
+  @media ${devices.tablet}{ height: 15%; }
+  
+  @media ${devices.mobile} { img{ max-width: 90px; } }
 
 `

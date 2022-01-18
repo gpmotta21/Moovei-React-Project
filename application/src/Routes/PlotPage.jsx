@@ -4,7 +4,9 @@ import styled from 'styled-components';
 import { StyledButton } from './FavoritesPage';
 import { i } from '../assets/icons';
 import alternateBg from '../assets/img/alternateBg.png';
-import { AnimatedPages } from './AnimatedPages'
+import { AnimatedPages } from './AnimatedPages';
+import { devices } from '../assets/devices';
+
 
 const animations = {
   initial: {opacity: 0, x: 1920},
@@ -12,7 +14,7 @@ const animations = {
   exit: {opacity: 0, x: -1920}
 }
 
-export default function Plot({className}) {
+export default function Plot() {
   const plot = useSelector(state => state.plot)
   const navigate = useNavigate()
 
@@ -34,7 +36,7 @@ export default function Plot({className}) {
   }
 
   return (
-    <StyledPlot className={className} animations={animations}>
+    <StyledPlot animations={animations}>
       {renderPlot()}
       <StyledButton onClick={() => navigate('/')}>
         {i.house}
@@ -93,8 +95,6 @@ position: relative;
     border-radius: 12px;
   }
   
-
-  
   img{
     display: block;
     grid-row: span 2;
@@ -104,5 +104,28 @@ position: relative;
     max-width: 100%;
     max-height: 90%;
   }
+
+  @media ${devices.tablet}{
+      width: 90%;
+      height: 80%;
+  }
+
+  @media ${devices.mobile}{
+
+    width: 90%;
+    height: 80%;
+
+    #container{
+      grid-template-rows: 15% 40% 45%;
+      grid-template-columns: 1fr;
+      row-gap: 2%;
+
+    img{ grid-row: span 1; }
+
+    #info{ font-size: 14px; }
+
+    }
+    }
+
 
   `

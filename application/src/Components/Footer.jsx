@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { i } from '../assets/icons';
 
-function Footer({className}) {
+function Footer() {
     return (
-        <FooterStyle className={className}>
-          <a href='https://github.com/gpmotta21'>{i.github}</a>
+        <FooterStyle >
+          <a href='https://github.com/gpmotta21/Moovei-React-Project'>{i.github}</a>
           <a href='https://www.linkedin.com/in/gpmotta21/'>{i.linkedin}</a>
         </FooterStyle>
     );
